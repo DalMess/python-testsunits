@@ -34,10 +34,10 @@ class TestCalcul(unittest.TestCase):
         self.assertEqual(resultat,5)
 
     # Test de division par zéro
-        def test_diviser_par_zero(self):
+    def test_diviser_par_zero(self):
             with self.assertRaises(ZeroDivisionError, msg="Division par zéro impossible"):
-                self.calc.diviser(5, 0)
-        
+                self.calc.diviser(2, 0)     
+
 # Exécuter les tests si le script est exécuté directement
 # Pour exécuter le test grâce au press play (la flèche), comme si on exécutait le code
 if __name__ == '__main__':
